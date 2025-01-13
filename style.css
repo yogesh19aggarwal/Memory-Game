@@ -1,0 +1,83 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-color: #6589f9;
+}
+
+.game-surface-main {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.game-surface {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.game-card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.game-card-img {
+  height: 70%;
+  width: 70%;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.game-card-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image:url("https://i.pinimg.com/474x/9b/52/e3/9b52e3feaf2978ba28dbf7af4ac5082c.jpg");
+  background-position: 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.game-card-wrap:clicked{
+  transform: rotateY(6.142rad);
+  -webkit-transition:1s;
+  /* transition: 0.3s ease-in-out; */
+}
+
+
+.game-card-wrap-green {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, rgb(35, 189, 0) 0%, rgba(19, 102, 0, 0.866) 0%), url("https://i.pinimg.com/474x/9b/52/e3/9b52e3feaf2978ba28dbf7af4ac5082c.jpg"), url("https://i.pinimg.com/474x/9b/52/e3/9b52e3feaf2978ba28dbf7af4ac5082c.jpg");
+  background-position: 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.d-none {
+    display: none;
+}
+
+span {
+    font-size: 1rem;
+    font-weight: bold;
+
+    color: white;
+}
